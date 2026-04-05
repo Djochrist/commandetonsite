@@ -237,7 +237,7 @@ function InfluenceurNav() {
   const links: [string, string][] = [["Plateformes","plateformes"],["Services","services"],["Portfolio","portfolio"],["Collab","collab"]];
   return (
     <nav className="hidden md:flex fixed left-0 right-0 z-40 items-center justify-between px-8 h-14"
-      style={{ top: 64, background: solid ? "rgba(26,0,42,0.97)" : "linear-gradient(90deg,rgba(26,0,42,0.88),rgba(130,2,99,0.88))", backdropFilter: "blur(16px)", borderBottom: "1px solid rgba(130,2,99,0.35)", transition: "background 0.35s" }}>
+      style={{ top: 64, background: solid ? "rgba(26,0,42,0.97)" : "rgba(26,0,42,0.92)", backdropFilter: "blur(16px)", borderBottom: "1px solid rgba(130,2,99,0.35)", transition: "background 0.35s" }}>
       <div className="flex items-center gap-2.5">
         <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: "#e1306c" }} />
         <span className="text-xs font-bold uppercase tracking-[0.3em] text-white/80">Digital Star</span>
@@ -255,7 +255,7 @@ function InfluenceurNav() {
       </div>
       <a href="https://wa.me/243819730124" target="_blank" rel="noopener noreferrer"
         className="text-xs font-bold text-white px-4 py-2 uppercase tracking-wider transition-opacity duration-200 hover:opacity-80"
-        style={{ background: "linear-gradient(135deg,#e1306c,#820263)" }}>
+        style={{ background: "#820263" }}>
         Travailler ensemble
       </a>
     </nav>
@@ -324,8 +324,8 @@ export default function Influenceur() {
         {/* ── HERO ── */}
         <section className="min-h-[92vh] flex items-center overflow-hidden relative" style={{ background: bg }}>
           <motion.div style={{ y: heroY }} className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full" style={{ opacity: isDark ? 0.1 : 0.07, background: "radial-gradient(circle, #820263 0%, transparent 70%)" }} />
-            <div className="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full" style={{ opacity: isDark ? 0.08 : 0.05, background: "radial-gradient(circle, #8b5cf6 0%, transparent 70%)" }} />
+            <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full" style={{ opacity: isDark ? 0.14 : 0.08, background: isDark ? "rgba(130,2,99,0.28)" : "rgba(130,2,99,0.15)" }} />
+            <div className="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full" style={{ opacity: isDark ? 0.12 : 0.06, background: isDark ? "rgba(139,92,246,0.25)" : "rgba(139,92,246,0.1)" }} />
           </motion.div>
 
           <div className="container mx-auto px-4 py-20 relative">
@@ -414,7 +414,7 @@ export default function Influenceur() {
 
               {/* Instagram */}
               <div className="border overflow-hidden rounded-sm" style={{ background: cardBg, borderColor: border }}>
-                <div className="h-24 w-full relative" style={{ background: "linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045)" }}>
+                <div className="h-24 w-full relative" style={{ background: isDark ? "rgba(131,59,180,0.12)" : "#fde4fb" }}>
                   <div className="absolute bottom-0 left-6 translate-y-1/2 w-16 h-16 rounded-full border-4 overflow-hidden" style={{ borderColor: cardBg }}>
                     <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&auto=format&fit=crop&q=80" alt="Photo de profil beauty_kalimement" className="w-full h-full object-cover" loading="lazy" />
                   </div>
@@ -486,7 +486,7 @@ export default function Influenceur() {
 
               {/* TikTok */}
               <div className="border overflow-hidden rounded-sm" style={{ background: cardBg, borderColor: border }}>
-                <div className="h-24 w-full relative overflow-hidden" style={{ background: "linear-gradient(135deg, #010101 0%, #1a1a2e 50%, #820263 100%)" }}>
+                <div className="h-24 w-full relative overflow-hidden" style={{ background: isDark ? "rgba(5,5,6,0.9)" : "#fbeefe" }}>
                   <div className="absolute inset-0 flex items-center justify-end pr-6 opacity-10">
                     <svg viewBox="0 0 24 24" className="w-20 h-20 fill-white"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.79 1.52V6.76a4.85 4.85 0 0 1-1.02-.07Z"/></svg>
                   </div>
@@ -741,7 +741,7 @@ export default function Influenceur() {
                   style={{ background: cardBg, borderColor: border }}
                   onMouseEnter={e => (e.currentTarget.style.borderColor = ACCENT + "50")}
                   onMouseLeave={e => (e.currentTarget.style.borderColor = border)}>
-                  <div className="absolute top-0 right-0 w-24 h-24 opacity-5" style={{ background: `radial-gradient(circle, ${ACCENT}, transparent)` }} />
+                  <div className="absolute top-0 right-0 w-24 h-24 opacity-5" style={{ background: "rgba(130,2,99,0.08)" }} />
                   <div className="flex gap-0.5 mb-5" style={{ color: ACCENT }}>
                     {Array(5).fill(0).map((_, j) => <IconHeart key={j} className="w-3.5 h-3.5" />)}
                   </div>
@@ -816,7 +816,7 @@ export default function Influenceur() {
         {/* ── CTA ── */}
         <section className="py-24 relative overflow-hidden" style={{ background: bg }}>
           <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full" style={{ opacity: isDark ? 0.1 : 0.07, background: `radial-gradient(circle, ${ACCENT} 0%, transparent 60%)` }} />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full" style={{ opacity: isDark ? 0.14 : 0.08, background: isDark ? "rgba(130,2,99,0.18)" : "rgba(130,2,99,0.08)" }} />
           </div>
           <div className="container mx-auto px-4 text-center relative">
             <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
