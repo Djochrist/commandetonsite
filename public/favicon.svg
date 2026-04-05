@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#4f46e5"/>
+
+  <!-- Globe outer circle -->
+  <circle cx="32" cy="32" r="19" stroke="white" stroke-width="2" fill="none"/>
+
+  <!-- Equator -->
+  <line x1="13" y1="32" x2="51" y2="32" stroke="white" stroke-width="1.6" opacity="0.8"/>
+
+  <!-- Top latitude arc -->
+  <path d="M17 22 Q32 18 47 22" stroke="white" stroke-width="1.4" fill="none" opacity="0.65"/>
+
+  <!-- Bottom latitude arc -->
+  <path d="M17 42 Q32 46 47 42" stroke="white" stroke-width="1.4" fill="none" opacity="0.65"/>
+
+  <!-- Central vertical meridian (straight) -->
+  <line x1="32" y1="13" x2="32" y2="51" stroke="white" stroke-width="1.6" opacity="0.8"/>
+
+  <!-- Left meridian arc -->
+  <path d="M32 13 Q22 32 32 51" stroke="white" stroke-width="1.4" fill="none" opacity="0.65"/>
+
+  <!-- Right meridian arc -->
+  <path d="M32 13 Q42 32 32 51" stroke="white" stroke-width="1.4" fill="none" opacity="0.65"/>
+</svg>

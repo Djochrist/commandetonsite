@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://commandetonsite.vercel.app/sitemap.xml
