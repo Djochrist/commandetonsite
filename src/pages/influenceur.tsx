@@ -142,6 +142,10 @@ const faqs = [
   { q: "Quelles plateformes gerez-vous ?", a: "Instagram, TikTok, YouTube et X (Twitter). Nous elaborons une strategie multi-plateforme coherente pour maximiser votre visibilite." },
   { q: "Comment se negocient les partenariats avec les marques ?", a: "Notre equipe de compte gere toute la negociation a votre place. Vous definissez vos tarifs planchers, nous trouvons des marques alignees avec votre image." },
 ];
+const facebookPosts = [
+  { img: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200&auto=format&fit=crop&q=80", text: "Nouvelle collection printemps disponible ! Contactez-nous pour commander." },
+  { img: "https://images.unsplash.com/photo-1511556820780-d912e42b4980?w=200&auto=format&fit=crop&q=80", text: "Merci a nos 300 000 abonnes ! Ensemble on va encore plus loin." },
+];
 
 /* ---------- Digital Icon ---------- */
 function DigitalIcon({ accent }: { accent: string }) {
