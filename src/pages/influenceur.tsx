@@ -35,7 +35,7 @@ function FloatingNotif({ icon, label, value, delay, x, y, bg, border, text }: {
       initial={{ opacity: 0, scale: 0.7, y: 20 }}
       animate={{ opacity: 1, scale: 1, y: [0, -8, 0] }}
       transition={{ delay, duration: 0.5, y: { repeat: Infinity, duration: 3 + delay, ease: "easeInOut" } }}
-      className="absolute flex items-center gap-2 px-4 py-2.5 rounded-2xl shadow-xl backdrop-blur-sm"
+      className="hidden sm:flex absolute items-center gap-2 px-4 py-2.5 rounded-2xl shadow-xl backdrop-blur-sm"
       style={{ left: x, top: y, zIndex: 10, background: bg, border: `1px solid ${border}` }}>
       {icon}
       <div>
@@ -349,7 +349,7 @@ export default function Influenceur() {
                   </a>
                 </motion.div>
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}
-                  className="mt-12 pt-8 border-t flex gap-10" style={{ borderColor: borderF }}>
+                  className="mt-12 pt-8 border-t flex flex-wrap gap-x-8 gap-y-4 sm:gap-10" style={{ borderColor: borderF }}>
                   {[["100K+", "Abonnes geres"], ["50+", "Marques partenaires"], ["300%", "Croissance moyenne"]].map(([val, lbl], i) => (
                     <div key={i}>
                       <div className="text-2xl font-bold" style={{ color: ACCENT }}>{val}</div>
